@@ -1,2 +1,2 @@
-# UrlShortnerQxBot
-It is repository for: [@UrlShortnerQxBot](https://t.me/UrlShortnerQxBot)
+# UrlShortenerQxBot 
+It is repository for: [@UrlShortenerQxBot](https://t.me/UrlShortenerQxBot)
