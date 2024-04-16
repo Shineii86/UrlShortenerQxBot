@@ -33,28 +33,33 @@ var quinx =
 
 if (quinx) {
   var button = [
-    [{ text: "𝐂ʀᴇᴀᴛᴇ 𝐋ɪɴᴋ", callback_data: "/shortlink" }],
+    [
+      { text: "𝐁ɪᴛʟʏ 𝐋ɪɴᴋ", callback_data: "/bitly" },
+      { text: "𝐓ɪɴʏ 𝐋ɪɴᴋ", callback_data: "/tiny" }
+    ],
     [
       { text: "𝐔ᴘᴅᴀᴛᴇs", url: "t.me/MaximXBots" },
-      { text: "𝐃ᴇvᴇʟᴏᴘᴇʀ", url: "t.me/Shineii86" },
       { text: "𝐒ᴜᴘᴘᴏʀᴛ", url: "t.me/MaximXGroup" }
     ],
     [{ text: "𝐂ʟᴏsᴇ", callback_data: "/close" }]
   ]
-  Api.sendMessage({
-    text:
-      "<b>✨ Free <a href='https://tinyurl.com/app'>tinyurl.com</a> Shortener Bot ✨</>\n\n<blockquote><i>🔹 Better quality links shortening\n🔹 Permanent shortened URLs\n🔹 Ad-free redirecting to the original URL</i></blockquote>",
-    parse_mode: "html",
+
+  Api.sendPhoto({
+    photo: "https://graph.org/file/d38935d21e72070495a9a.jpg",
+    caption:
+      "<b>I have 2 types of URL Shorteners. Please choose which one you want by clicking on the buttons in the menu below.</b>\n\n<blockquote><i>🔹 Better quality links shortening\n🔹 Permanent shortened URLs\n🔹 Ad-free redirecting to the original URL</i></blockquote>",
+    parse_mode: "HTML",
     disable_web_page_preview: true,
     reply_markup: { inline_keyboard: button }
   })
   return
 }
+
 Api.sendPhoto({
-  photo: "https://telegra.ph/file/be9ad73326e879c130c97.jpg",
+  photo: "https://graph.org/file/d38935d21e72070495a9a.jpg",
   caption:
-    "*Please join my channel to use this bot!*\n\nTo join my *Channel*, click on the button below, and then come back and click on the *Refresh* button",
-  parse_mode: "Markdown",
+    "<b>Please join my channel to use this bot!</b>\n\nTo join my <b>Channel</b>, click on the button below, and then come back and click on the <b>Refresh</b> button",
+  parse_mode: "HTML",
   reply_markup: {
     inline_keyboard: [
       [

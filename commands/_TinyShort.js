@@ -1,5 +1,5 @@
 /*CMD
-  command: /onSuccess
+  command: /TinyShort
   help: 
   need_reply: false
   auto_retry_time: 

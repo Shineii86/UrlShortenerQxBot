@@ -1,10 +1,15 @@
 /*CMD
-  command: /shortlink
+  command: /tiny
   help: 
   need_reply: true
   auto_retry_time: 
   folder: 
-  answer: Send any link and I'll shorten it for you! ✨
+
+  <<ANSWER
+Send Any Long Link And I'll Shorten It For You!
+
+_Developer @Shineii86_
+  ANSWER
 
   <<KEYBOARD
 
@@ -23,9 +28,9 @@ if (validURL(message)) {
   // Use HTTP.get to call the TinyURL API and shorten the URL
   HTTP.get({
     url: "http://tinyurl.com/api-create.php?url=" + message,
-    success: "/onSuccess"
+    success: "/TinyShort"
   })
 } else {
-  Bot.sendMessage("Wrong URL\nExample : `https://bots.business`")
+  Bot.sendMessage("Wrong URL\nExample : `https://t.me/Shineii86`")
 }
 
